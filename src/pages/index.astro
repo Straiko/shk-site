@@ -1,0 +1,191 @@
+---
+---
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ШК Бот — Штрих-коды и QR-коды</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0a0a0a;
+      color: #e0e0e0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 480px;
+      width: 100%;
+      padding: 40px 24px;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 64px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      color: #888;
+      margin-bottom: 40px;
+      line-height: 1.5;
+    }
+
+    .bots {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .bot-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 20px 24px;
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 16px;
+      text-decoration: none;
+      color: #fff;
+      transition: all 0.2s ease;
+    }
+
+    .bot-card:hover {
+      background: #222;
+      border-color: #444;
+      transform: translateY(-2px);
+    }
+
+    .bot-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      flex-shrink: 0;
+    }
+
+    .bot-icon.tg { background: #2AABEE; }
+    .bot-icon.max { background: #FF6B00; }
+    .bot-icon.vk { background: #4C75A3; }
+
+    .bot-info {
+      text-align: left;
+    }
+
+    .bot-name {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    .bot-desc {
+      font-size: 14px;
+      color: #888;
+    }
+
+    .arrow {
+      margin-left: auto;
+      color: #555;
+      font-size: 20px;
+    }
+
+    .footer {
+      margin-top: 48px;
+      font-size: 13px;
+      color: #555;
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      margin: 32px 0;
+    }
+
+    .feature {
+      text-align: center;
+    }
+
+    .feature-icon {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .feature-text {
+      font-size: 13px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">📊</div>
+    <h1>ШК Бот</h1>
+    <p class="subtitle">Сканируй и генерируй штрих-коды и QR-коды<br>в любом мессенджере</p>
+
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon">📷</div>
+        <div class="feature-text">Сканирование</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">✏️</div>
+        <div class="feature-text">Генерация</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🔍</div>
+        <div class="feature-text">OCR текст</div>
+      </div>
+    </div>
+
+    <div class="bots">
+      <a href="https://t.me/Ozonbratik_bot" class="bot-card" target="_blank">
+        <div class="bot-icon tg">✈️</div>
+        <div class="bot-info">
+          <div class="bot-name">Telegram</div>
+          <div class="bot-desc">@Ozonbratik_bot</div>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+
+      <a href="https://max.ru/id771692758487_bot" class="bot-card" target="_blank">
+        <div class="bot-icon max">⚡</div>
+        <div class="bot-info">
+          <div class="bot-name">MAX</div>
+          <div class="bot-desc">Генератор ШК</div>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+
+      <a href="https://vk.com/club239550562" class="bot-card" target="_blank">
+        <div class="bot-icon vk">💬</div>
+        <div class="bot-info">
+          <div class="bot-name">VK</div>
+          <div class="bot-desc">ШК Бот — Штрих-коды</div>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+    </div>
+
+    <div class="footer">Бот бесплатен — подписка на канал помогает с улучшениями ❤️</div>
+  </div>
+</body>
+</html>
